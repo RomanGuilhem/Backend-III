@@ -21,4 +21,4 @@ export default class Adoption {
     delete = (id) =>{
         return adoptionModel.findByIdAndDelete(id);
     }
-}
+}    

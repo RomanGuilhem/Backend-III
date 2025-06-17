@@ -3,8 +3,8 @@ import { hashSync } from 'bcrypt';
 
 const generatePet = () => {
     return {
-        name: faker.animal.dog(), // o cualquier otro nombre aleatorio
-        specie: faker.helpers.arrayElement(['dog', 'cat', 'rabbit', 'bird']), // CAMBIO: debe llamarse `specie` (no `species`)
+        name: faker.animal.dog(), 
+        specie: faker.helpers.arrayElement(['dog', 'cat', 'rabbit', 'bird']), 
         age: faker.number.int({ min: 1, max: 15 }),
         adopted: false,
     };
